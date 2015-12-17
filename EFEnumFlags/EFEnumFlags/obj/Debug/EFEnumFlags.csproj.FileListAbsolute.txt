@@ -1,0 +1,12 @@
+F:\MyCode\EFEnumFlags\EFEnumFlags\bin\Debug\EFEnumFlags.exe.config
+F:\MyCode\EFEnumFlags\EFEnumFlags\bin\Debug\EFEnumFlags.exe
+F:\MyCode\EFEnumFlags\EFEnumFlags\bin\Debug\EFEnumFlags.pdb
+F:\MyCode\EFEnumFlags\EFEnumFlags\bin\Debug\EntityFramework.dll
+F:\MyCode\EFEnumFlags\EFEnumFlags\bin\Debug\EntityFramework.SqlServer.dll
+F:\MyCode\EFEnumFlags\EFEnumFlags\bin\Debug\EntityFramework.xml
+F:\MyCode\EFEnumFlags\EFEnumFlags\bin\Debug\EntityFramework.SqlServer.xml
+F:\MyCode\EFEnumFlags\EFEnumFlags\obj\Debug\EFEnumFlags.csprojResolveAssemblyReference.cache
+F:\MyCode\EFEnumFlags\EFEnumFlags\obj\Debug\EFEnumFlags.exe
+F:\MyCode\EFEnumFlags\EFEnumFlags\obj\Debug\EFEnumFlags.pdb
+F:\MyCode\EFEnumFlags\EFEnumFlags\obj\Debug\EFEnumFlags.Migrations.InitialCreate.resources
+F:\MyCode\EFEnumFlags\EFEnumFlags\obj\Debug\EFEnumFlags.csproj.GenerateResource.Cache
