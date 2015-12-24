@@ -50,12 +50,39 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entity\Certification.cs" />
+    <Compile Include="Entity\Invoice.cs" />
+    <Compile Include="Entity\PaperProduct.cs" />
     <Compile Include="Entity\Payrecords.cs" />
+    <Compile Include="Entity\Product.cs" />
+    <Compile Include="Entity\ProductPhoto.cs" />
+    <Compile Include="Entity\Tag.cs" />
     <Compile Include="Enum\PayType.cs" />
     <Compile Include="Mapping\PayrecordsMapping.cs" />
+    <Compile Include="Mapping\ProductMapping.cs" />
     <Compile Include="Migrations\201512170814454_InitialCreate.cs" />
     <Compile Include="Migrations\201512170814454_InitialCreate.Designer.cs">
       <DependentUpon>201512170814454_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201512240543250_AddInvoice.cs" />
+    <Compile Include="Migrations\201512240543250_AddInvoice.Designer.cs">
+      <DependentUpon>201512240543250_AddInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201512240606215_AddCertification.cs" />
+    <Compile Include="Migrations\201512240606215_AddCertification.Designer.cs">
+      <DependentUpon>201512240606215_AddCertification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201512240626347_ProductPhoto.cs" />
+    <Compile Include="Migrations\201512240626347_ProductPhoto.Designer.cs">
+      <DependentUpon>201512240626347_ProductPhoto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201512240638116_AddProductTag.cs" />
+    <Compile Include="Migrations\201512240638116_AddProductTag.Designer.cs">
+      <DependentUpon>201512240638116_AddProductTag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201512240729275_AddPaperProduct.cs" />
+    <Compile Include="Migrations\201512240729275_AddPaperProduct.Designer.cs">
+      <DependentUpon>201512240729275_AddPaperProduct.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="PayContext.cs" />
@@ -63,12 +90,29 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201512170814454_InitialCreate.resx">
       <DependentUpon>201512170814454_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201512240543250_AddInvoice.resx">
+      <DependentUpon>201512240543250_AddInvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201512240606215_AddCertification.resx">
+      <DependentUpon>201512240606215_AddCertification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201512240626347_ProductPhoto.resx">
+      <DependentUpon>201512240626347_ProductPhoto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201512240638116_AddProductTag.resx">
+      <DependentUpon>201512240638116_AddProductTag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201512240729275_AddPaperProduct.resx">
+      <DependentUpon>201512240729275_AddPaperProduct.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

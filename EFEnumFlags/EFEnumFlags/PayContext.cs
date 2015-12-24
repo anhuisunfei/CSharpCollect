@@ -14,16 +14,18 @@ namespace EFEnumFlags
 		static PayContext()
 		{
 			Database.SetInitializer(new DropCreateDatabaseIfModelChanges<PayContext>());
+
 		}
 
 		public PayContext()
 			: base("EfConnection")
 		{
-
+			this.Configuration.LazyLoadingEnabled = false;
 		}
 
 		protected override void OnModelCreating(DbModelBuilder modelBuilder)
 		{
+
 			var typesToRegister = Assembly.GetExecutingAssembly().GetTypes()
 				.Where(type => !String.IsNullOrEmpty(type.Namespace))
 				.Where(type => type.BaseType != null && type.BaseType.IsGenericType && type.BaseType.GetGenericTypeDefinition() == typeof(EntityTypeConfiguration<>));

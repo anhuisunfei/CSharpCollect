@@ -1,31 +1,36 @@
 namespace EFEnumFlags.Migrations
 {
-    using System;
-    using System.Data.Entity;
-    using System.Data.Entity.Migrations;
-    using System.Linq;
+	using EFEnumFlags.Entity;
+	using System;
+	using System.Data.Entity;
+	using System.Data.Entity.Migrations;
+	using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<EFEnumFlags.PayContext>
-    {
-        public Configuration()
-        {
-            AutomaticMigrationsEnabled = true;
-        }
+	internal sealed class Configuration : DbMigrationsConfiguration<EFEnumFlags.PayContext>
+	{
+		public Configuration()
+		{
+			AutomaticMigrationsEnabled = true;
 
-        protected override void Seed(EFEnumFlags.PayContext context)
-        {
-            //  This method will be called after migrating to the latest version.
+		}
 
-            //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
-            //  to avoid creating duplicate seed data. E.g.
-            //
-            //    context.People.AddOrUpdate(
-            //      p => p.FullName,
-            //      new Person { FullName = "Andrew Peters" },
-            //      new Person { FullName = "Brice Lambson" },
-            //      new Person { FullName = "Rowan Miller" }
-            //    );
-            //
-        }
-    }
+		protected override void Seed(EFEnumFlags.PayContext context)
+		{
+			//var list = context.Set<Product>();
+			//context.Set<Product>().RemoveRange(list);
+			//context.SaveChanges();
+			//  This method will be called after migrating to the latest version.
+
+			//  You can use the DbSet<T>.AddOrUpdate() helper extension method 
+			//  to avoid creating duplicate seed data. E.g.
+			//
+			//    context.People.AddOrUpdate(
+			//      p => p.FullName,
+			//      new Person { FullName = "Andrew Peters" },
+			//      new Person { FullName = "Brice Lambson" },
+			//      new Person { FullName = "Rowan Miller" }
+			//    );
+			//
+		}
+	}
 }
